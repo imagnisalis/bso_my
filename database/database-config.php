@@ -37,8 +37,8 @@ $response = ClientStatic::post(
 
 
 $jsonResponse = json_decode($response->getContent(), true);
-echo "json response:".$jsonResponse."<br>";
-echo "<br>";
+//echo "json response:".$jsonResponse."<br>";
+//echo "<br>";
 
 //// Response
 // Get Access Token
@@ -55,17 +55,17 @@ $emdedReportResponse = ClientStatic::get(
         'Content-Type' => 'application/json',
     ]
 );
-echo "emdedReportResponse:".$emdedReportResponse."<br>";
+//echo "emdedReportResponse:".$emdedReportResponse."<br>";
 ///// Response
 $embedReport = json_decode($emdedReportResponse->getBody(), true);
-echo "embedReport:".$embedReport."<br>";
+//echo "embedReport:".$embedReport."<br>";
 
 $datasetId = $embedReport['datasetId'];
-echo "datasetId:".$datasetId."<br>";
+//echo "datasetId:".$datasetId."<br>";
 $targetWorkspaceId = $embedReport['datasetWorkspaceId'];
-echo "targetWorkspaceId:".$targetWorkspaceId."<br>";
+//echo "targetWorkspaceId:".$targetWorkspaceId."<br>";
 $embedUrl = $embedReport["embedUrl"];
-echo "embedUrl:".$embedUrl."<br>";
+//echo "embedUrl:".$embedUrl."<br>";
 /////////
 
 
