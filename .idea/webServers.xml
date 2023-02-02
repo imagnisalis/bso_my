@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="48d7156c-f9d2-44dd-b6f9-930f48bd35db" name="demo.living-lab.gr" url="https://demo.living-lab.gr/bso">
+        <fileTransfer rootFolder="/var/www/html/bso" accessType="SFTP" host="demo.living-lab.gr" port="22" sshConfigId="0a8b7ccd-d8dd-4a54-b0a7-8073423aff58" sshConfig="elabs@demo.living-lab.gr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "laminas/laminas-http": "^2.18",
+        "laminas/laminas-json": "^3.5"
+    }
+}
