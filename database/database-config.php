@@ -44,7 +44,7 @@ $jsonResponse = json_decode($response->getContent(), true);
 // Get Access Token
 $accessToken = $jsonResponse['access_token'];
 ///////
-echo "accesstoken:".$accessToken."<br>";
+//echo "accesstoken:".$accessToken."<br>";
 
 ////// Phase 2. GET to take embeded url, datasets, targetWorkspaces
 $emdedReportResponse = ClientStatic::get(
